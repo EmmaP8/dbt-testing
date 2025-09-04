@@ -6,6 +6,7 @@
 
     Try changing "table" to "view" below
 */
+USE WAREHOUSE MY_DBT_TRAINING;
 
 {{ config(materialized='table') }}
 
@@ -18,6 +19,7 @@ with source_data as (
 )
 
 select *
+
 from source_data
 
 /*
